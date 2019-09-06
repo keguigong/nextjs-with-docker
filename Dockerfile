@@ -5,5 +5,5 @@ COPY package.json /usr/src/app
 COPY yarn.lock /usr/src/app
 RUN npm install -g yarn && yarn install
 COPY . /usr/src/app
-# EXPOSE 3000
+EXPOSE 3000
 CMD yarn dev
